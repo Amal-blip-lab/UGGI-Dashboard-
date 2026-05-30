@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGGI | Data & Research Hub</title>
+    <style>
+        /* Base Styling & Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* UGGI Inspired Header & Branding */
+        header {
+            background-color: #0c4b32; /* Deep Forest Green */
+            border-bottom: 4px solid #d4af37; /* UG Gold Accent Bar */
+            color: #ffffff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo-area h1 {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .logo-area p {
+            font-size: 12px;
+            color: #a3c7b9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 2px;
+        }
+
+        /* Navigation & Tabs */
+        nav {
+            display: flex;
+            gap: 5px;
+        }
+
+        .tab-btn {
+            background-color: transparent;
+            border: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        /* Active Dashboard Style */
+        .tab-btn.active {
+            background-color: #d4af37; /* UG Gold */
+            color: #0c4b32; /* Deep Green Text */
+        }
+
+        .tab-btn:hover:not(.active) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Main Content Workspace */
+        main {
+            flex: 1;
+            padding: 30px;
+            max-width: 1600px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .dashboard-container {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border-top: 3px solid #0c4b32;
+        }
+
+        .dashboard-header {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .dashboard-header h2 {
+            color: #0c4b32;
+            font-size: 22px;
+        }
+
+        .dashboard-header p {
+            color: #666;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        /* Looker Studio Responsive Embed Wrapper */
+        .embed-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            background: #fafafa;
+        }
+
+        /* Adjusted sizes to give many charts room to breathe */
+        .embed-wrapper iframe {
+            width: 100%;
+            height: 850px; /* Enhanced height for dense, multi-page data layouts */
+            display: block;
+        }
+
+        /* Simple Footer */
+        footer {
+            background-color: #111;
+            color: #888;
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+            margin-top: auto;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <h1>UG GREEN INSTITUTE</h1>
+            <p>Growth in a Resource-Abundant Economy and Environment</p>
+        </div>
+        <nav>
+            <button class="tab-btn active">Dashboard</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="dashboard-container">
+            <div class="dashboard-header">
+                <h2>Interactive Data & Analysis Portal</h2>
+                <p>Live environmental, industrial, and macroeconomic visualizations framework.</p>
+            </div>
+            
+            <div class="embed-wrapper">
+                <iframe 
+                    src="https://datastudio.google.com/embed/reporting/447edc13-39b3-4598-83e4-e0ef20d7703f/page/p_fi4f50z43d" 
+                    frameborder="0" 
+                    allowfullscreen 
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 University of Guyana GREEN Institute. All Analytical Rights Reserved.
+    </footer>
+
+</body>
+</html>
